@@ -1,6 +1,6 @@
 """
 attempt 1 at making this 1 time use program that will extract the amino acid from cleaned source file to target text files
-creates target files if they dont exist 
+creates target files if they dont exist. copies the characters into new files and verifies the char count.
 """
 
 from contextlib import redirect_stdout                          # imported to make the output goto file
