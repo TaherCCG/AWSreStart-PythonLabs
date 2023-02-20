@@ -21,6 +21,7 @@ def encryptMessage(message, cipherKey, alphabet):                               
         newPosition = position + int(cipherKey)                                 # define var newPosition that concatenates position and integer cipherKey
         if currentCharacter in alphabet:                                        # check if currentCharacter in alphabet    
             encryptedMessage = encryptedMessage + alphabet[newPosition]         # define var encryptedMessage to new value that concatenates var encryptedMessage with function argument alphabet(newPosition)
+        else:                                                                   # else 
             encryptedMessage = encryptedMessage + currentCharacter              # defines new value for var encryptedMessage as concatenates of encryptedMessage and currentCharacter     
     return encryptedMessage                                                     # return encryptedMessage
     
@@ -39,7 +40,7 @@ def runCaesarCipherProgram():                                                   
     print(myCipherKey)                                                          # print var myCipherKey        
     myEncryptedMessage = encryptMessage(myMessage, myCipherKey, myAlphabet2)    # define var myEncryptedMessage as decryptedMessage function with 3 arguments myEncryptedMessage, myCipherKey, myAlphabet2
     print(f'Encrypted Message: {myEncryptedMessage}')                           # print formatted string with var myEncryptedMessage
-    myDecryptedMessage = decryptMessage(myEncryptedMessage, myCipherKey, myAlphabet2) # define var myDecryptedMessage as decryptMessage function with 3 arguments myEncryptedMessage, myCipherKey, myAlphabet2
+    myDecryptedMessage = decryptMessage(myEncryptedMessage, myCipherKey, myAlphabet2)   # define var myDecryptedMessage as decryptMessage function with 3 arguments myEncryptedMessage, myCipherKey, myAlphabet2
     print(f'Decrypted Message: {myDecryptedMessage}')                           # print formatted string with var myDecryptedMessage
     
 runCaesarCipherProgram()                                                        # calls the function runCaesarCipherProgram()
