@@ -4,7 +4,7 @@ start = 1                                                       # define var sta
 end = 250                                                       # define var end for ending number
 
 print("You can also find the results in 'results.txt' file.")   # print message to notify the results will be in results.txt file
-with open ('results-google.txt', 'w') as f1:                           # with open file results.txt as f1
+with open ('results.txt', 'w') as f1:                           # with open file results.txt as f1
     f1.write("Prime numbers between 1 and 250 are:\n")          # Prints message at line 1 of file
     for num in range(start,end):                                # loop num in range of start to end
         prime=True                                              # define var prime as True     
